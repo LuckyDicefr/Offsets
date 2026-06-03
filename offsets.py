@@ -1,5 +1,5 @@
 class Offsets:
-    ROBLOX_VERSION = "version-460909c4fe904aae"
+    ROBLOX_VERSION = "version-ad5d3e2906444472"
 
     class Atmosphere:
         Color = 208
@@ -56,7 +56,7 @@ class Offsets:
         Workspace = 376
 
     class FakeDataModel:
-        Pointer = 126687968
+        Pointer = 126884704
         RealDataModel = 464
 
     class GuiBase2D:
@@ -65,26 +65,26 @@ class Offsets:
         AbsoluteSize = 280
 
     class GuiObject:
-        Active = 1464
-        AnchorPoint = 1384
-        AutomaticSize = 1392
-        BackgroundColor3 = 1360
-        BackgroundTransparency = 1396
-        BorderColor3 = 1372
-        BorderMode = 1400
-        BorderSizePixel = 1404
-        ClipsDescendants = 1465
-        GuiState = 1416
-        Interactable = 1467
-        LayoutOrder = 1424
-        Position = 1312
+        Active = 1448
+        AnchorPoint = 1368
+        AutomaticSize = 1376
+        BackgroundColor3 = 1344
+        BackgroundTransparency = 1380
+        BorderColor3 = 1356
+        BorderMode = 1384
+        BorderSizePixel = 1388
+        ClipsDescendants = 1449
+        GuiState = 1400
+        Interactable = 1451
+        LayoutOrder = 1408
+        Position = 1296
         Rotation = 392
-        Selectable = 1468
-        SelectionOrder = 1452
-        Size = 1344
-        SizeConstraint = 1456
-        Visible = 1469
-        ZIndex = 1460
+        Selectable = 1452
+        SelectionOrder = 1436
+        Size = 1328
+        SizeConstraint = 1440
+        Visible = 1453
+        ZIndex = 1444
 
     class Humanoid:
         AutoJumpEnabled = 480
@@ -290,7 +290,7 @@ class Offsets:
         JobName = 24
         JobStart = 200
         MaxFps = 176
-        Pointer = 132511352
+        Pointer = 132711752
 
     class Team:
         TeamColor = 208
@@ -305,47 +305,47 @@ class Offsets:
         WaterWaveSpeed = 524
 
     class TextButton:
-        AutoButtonColor = 2516
-        ContentText = 3560
-        Font = 4344
-        LineHeight = 3808
-        LocalizedText = 3560
-        MaxVisibleGraphemes = 4356
-        Modal = 2517
-        RichText = 4058
-        Selected = 2518
-        Text = 3560
-        TextColor3 = 4320
-        TextDirection = 3968
-        TextScaled = 4050
-        TextSize = 4364
-        TextStrokeColor3 = 4332
-        TextStrokeTransparency = 4368
-        TextTransparency = 4372
-        TextTruncate = 4376
-        TextWrapped = 4052
-        TextXAlignment = 4380
-        TextYAlignment = 3880
+        AutoButtonColor = 2500
+        ContentText = 3544
+        Font = 4328
+        LineHeight = 3792
+        LocalizedText = 3544
+        MaxVisibleGraphemes = 4340
+        Modal = 2501
+        RichText = 4042
+        Selected = 2502
+        Text = 3544
+        TextColor3 = 4304
+        TextDirection = 3952
+        TextScaled = 4034
+        TextSize = 4348
+        TextStrokeColor3 = 4316
+        TextStrokeTransparency = 4352
+        TextTransparency = 4356
+        TextTruncate = 4360
+        TextWrapped = 4036
+        TextXAlignment = 4364
+        TextYAlignment = 3864
 
     class TextLabel:
-        ContentText = 2920
-        Font = 3704
-        LineHeight = 3168
-        LocalizedText = 2920
-        MaxVisibleGraphemes = 3716
-        RichText = 3418
-        Text = 2920
-        TextColor3 = 3680
-        TextDirection = 3328
-        TextScaled = 3410
-        TextSize = 3724
-        TextStrokeColor3 = 3692
-        TextStrokeTransparency = 3728
-        TextTransparency = 3732
-        TextTruncate = 3736
-        TextWrapped = 3412
-        TextXAlignment = 3740
-        TextYAlignment = 3240
+        ContentText = 2904
+        Font = 3688
+        LineHeight = 3152
+        LocalizedText = 2904
+        MaxVisibleGraphemes = 3700
+        RichText = 3402
+        Text = 2904
+        TextColor3 = 3664
+        TextDirection = 3312
+        TextScaled = 3394
+        TextSize = 3708
+        TextStrokeColor3 = 3676
+        TextStrokeTransparency = 3712
+        TextTransparency = 3716
+        TextTruncate = 3720
+        TextWrapped = 3394
+        TextXAlignment = 3724
+        TextYAlignment = 3224
 
     class Tool:
         CanBeDropped = 1224
@@ -373,7 +373,7 @@ class Offsets:
     class VisualEngine:
         Dimensions = 2736
         FakeDataModel = 2704
-        Pointer = 134140160
+        Pointer = 134340528
         RenderView = 2992
         ViewMatrix = 336
 
