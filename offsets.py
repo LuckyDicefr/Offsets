@@ -167,7 +167,7 @@ class Offsets:
     class LocalScript:
         ByteCode = 424
         Bytecode = 424
-        Hash = 440
+        Hash = 232
 
     class MaterialColors:
         Asphalt = 48
@@ -214,7 +214,7 @@ class Offsets:
     class Player:
         AccountAge = 812
         CameraMode = 32
-        Character = 936
+        Character = 640
         DisplayName = 304
         HealthDisplayDistance = 856
         LocalPlayer = 312
@@ -343,7 +343,7 @@ class Offsets:
         TextStrokeTransparency = 3712
         TextTransparency = 3716
         TextTruncate = 3720
-        TextWrapped = 3394
+        TextWrapped = 3396
         TextXAlignment = 3724
         TextYAlignment = 3224
 

@@ -207,7 +207,7 @@ namespace RobloxOffsets
     {
         public const ulong ByteCode = 0x1A8;
         public const ulong Bytecode = 0x1A8;
-        public const ulong Hash = 0x1B8;
+        public const ulong Hash = 0xE8;
     }
 
     public static class MaterialColors
@@ -266,7 +266,7 @@ namespace RobloxOffsets
     {
         public const ulong AccountAge = 0x32C;
         public const ulong CameraMode = 0x20;
-        public const ulong Character = 0x3A8;
+        public const ulong Character = 0x280;
         public const ulong DisplayName = 0x130;
         public const ulong HealthDisplayDistance = 0x358;
         public const ulong LocalPlayer = 0x138;
@@ -421,7 +421,7 @@ namespace RobloxOffsets
         public const ulong TextStrokeTransparency = 0xE80;
         public const ulong TextTransparency = 0xE84;
         public const ulong TextTruncate = 0xE88;
-        public const ulong TextWrapped = 0xD42;
+        public const ulong TextWrapped = 0xD44;
         public const ulong TextXAlignment = 0xE8C;
         public const ulong TextYAlignment = 0xC98;
     }

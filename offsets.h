@@ -187,7 +187,7 @@ namespace Offsets {
     namespace LocalScript {
          inline constexpr uintptr_t ByteCode = 0x1a8;
          inline constexpr uintptr_t Bytecode = 0x1a8;
-         inline constexpr uintptr_t Hash = 0x1b8;
+         inline constexpr uintptr_t Hash = 0xe8;
     }
 
     namespace MaterialColors {
@@ -240,7 +240,7 @@ namespace Offsets {
     namespace Player {
          inline constexpr uintptr_t AccountAge = 0x32c;
          inline constexpr uintptr_t CameraMode = 0x20;
-         inline constexpr uintptr_t Character = 0x3a8;
+         inline constexpr uintptr_t Character = 0x280;
          inline constexpr uintptr_t DisplayName = 0x130;
          inline constexpr uintptr_t HealthDisplayDistance = 0x358;
          inline constexpr uintptr_t LocalPlayer = 0x138;
@@ -382,7 +382,7 @@ namespace Offsets {
          inline constexpr uintptr_t TextStrokeTransparency = 0xe80;
          inline constexpr uintptr_t TextTransparency = 0xe84;
          inline constexpr uintptr_t TextTruncate = 0xe88;
-         inline constexpr uintptr_t TextWrapped = 0xd42;
+         inline constexpr uintptr_t TextWrapped = 0xd44;
          inline constexpr uintptr_t TextXAlignment = 0xe8c;
          inline constexpr uintptr_t TextYAlignment = 0xc98;
     }
