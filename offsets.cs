@@ -1,481 +1,615 @@
-#pragma once
-// Offsets dumped by @BlatantExe on discord
+/* =============================================================
+/*                       RbxDumperV2                            
+/*               https://imtheo.lol/Offsets                     
+/* -------------------------------------------------------------
+/*  Dumped By       : theo (https://imtheo.lol)                 
+/*  Roblox Version  : version-76173e47a79145c7
+/*  Dumper Version  : 2.1.7
+/*  Dumped At       : 18:55 09/06/2026 (GMT)
+/*  Total Offsets   : 390
+/* -------------------------------------------------------------
+/*  Join the discord!                                           
+/*  https://discord.gg/rbxoffsets                               
+/* =============================================================
+*/
 
-using System;
-
-namespace RobloxOffsets
-{
-    public static class Metadata
-    {
-        public const string RobloxVersion = "version-ad5d3e2906444472";
+namespace Offsets {
+    public static class Info {
+        public static string ClientVersion = "version-76173e47a79145c7";
     }
 
-    public static class Atmosphere
-    {
-        public const ulong Color = 0xD0;
-        public const ulong Decay = 0xDC;
-        public const ulong Density = 0xE8;
-        public const ulong Glare = 0xEC;
-        public const ulong Haze = 0xF0;
-        public const ulong Offset = 0xF4;
+    public static class AirProperties {
+         public const long AirDensity = 0x18;
+         public const long GlobalWind = 0x3c;
     }
 
-    public static class BasePart
-    {
-        public const ulong CastShadow = 0xF5;
-        public const ulong Color3 = 0x194;
-        public const ulong Locked = 0xF6;
-        public const ulong Massless = 0xF7;
-        public const ulong Primitive = 0x148;
-        public const ulong Reflectance = 0xEC;
-        public const ulong Shape = 0x1B1;
-        public const ulong Transparency = 0xF0;
+    public static class AnimationTrack {
+         public const long Animation = 0xd0;
+         public const long Animator = 0x118;
+         public const long IsPlaying = 0xa10;
+         public const long Looped = 0xf5;
+         public const long Speed = 0xe4;
+         public const long TimePosition = 0xe8;
     }
 
-    public static class BloomEffect
-    {
-        public const ulong Intensity = 0xD0;
-        public const ulong Size = 0xD4;
-        public const ulong Threshold = 0xD8;
+    public static class Animator {
+         public const long ActiveAnimations = 0x880;
     }
 
-    public static class ByteCode
-    {
-        public const ulong Pointer = 0x10;
-        public const ulong Size = 0x20;
+    public static class Atmosphere {
+         public const long Color = 0xd0;
+         public const long Decay = 0xdc;
+         public const long Density = 0xe8;
+         public const long Glare = 0xec;
+         public const long Haze = 0xf0;
+         public const long Offset = 0xf4;
     }
 
-    public static class Camera
-    {
-        public const ulong CFrame = 0xF8;
-        public const ulong CameraSubject = 0xE8;
-        public const ulong CameraType = 0x20;
-        public const ulong FieldOfView = 0x160;
-        public const ulong ImagePlaneDepth = 0x128;
-        public const ulong Position = 0x11C;
-        public const ulong Rotation = 0xF8;
-        public const ulong Viewport = 0x2AC;
-        public const ulong ViewportInt16 = 0x2AC;
-        public const ulong ViewportSize = 0x2E8;
+    public static class Attachment {
+         public const long Position = 0xdc;
     }
 
-    public static class CharacterMesh
-    {
-        public const ulong BaseTextureId = 0xE0;
-        public const ulong BodyPart = 0x160;
-        public const ulong MeshId = 0x110;
-        public const ulong OverlayTextureId = 0x140;
+    public static class BasePart {
+         public const long CastShadow = 0xf5;
+         public const long Color3 = 0x194;
+         public const long Locked = 0xf6;
+         public const long Massless = 0xf7;
+         public const long Primitive = 0x148;
+         public const long Reflectance = 0xec;
+         public const long Shape = 0x1b1;
+         public const long Transparency = 0xf0;
     }
 
-    public static class DataModel
-    {
-        public const ulong CreatorId = 0x190;
-        public const ulong GameId = 0x198;
-        public const ulong GameLoaded = 0x638;
-        public const ulong JobId = 0x138;
-        public const ulong PlaceId = 0x1A0;
-        public const ulong ServerIP = 0x620;
-        public const ulong Workspace = 0x178;
+    public static class Beam {
+         public const long Attachment0 = 0x178;
+         public const long Attachment1 = 0x188;
+         public const long Brightness = 0x198;
+         public const long CurveSize0 = 0x19c;
+         public const long CurveSize1 = 0x1a0;
+         public const long LightEmission = 0x1a4;
+         public const long LightInfluence = 0x1a8;
+         public const long Texture = 0x158;
+         public const long TextureLength = 0x1b4;
+         public const long TextureSpeed = 0x1bc;
+         public const long Width0 = 0x1c0;
+         public const long Width1 = 0x1c4;
+         public const long ZOffset = 0x1c8;
     }
 
-    public static class FakeDataModel
-    {
-        public const ulong Pointer = 0x7901B60;
-        public const ulong RealDataModel = 0x1D0;
+    public static class BloomEffect {
+         public const long Enabled = 0xc8;
+         public const long Intensity = 0xd0;
+         public const long Size = 0xd4;
+         public const long Threshold = 0xd8;
     }
 
-    public static class GuiBase2D
-    {
-        public const ulong AbsolutePosition = 0x10C;
-        public const ulong AbsoluteRotation = 0x188;
-        public const ulong AbsoluteSize = 0x118;
+    public static class BlurEffect {
+         public const long Enabled = 0xc8;
+         public const long Size = 0xd0;
     }
 
-    public static class GuiObject
-    {
-        public const ulong Active = 0x5A8;
-        public const ulong AnchorPoint = 0x558;
-        public const ulong AutomaticSize = 0x560;
-        public const ulong BackgroundColor3 = 0x540;
-        public const ulong BackgroundTransparency = 0x564;
-        public const ulong BorderColor3 = 0x54C;
-        public const ulong BorderMode = 0x568;
-        public const ulong BorderSizePixel = 0x56C;
-        public const ulong ClipsDescendants = 0x5A9;
-        public const ulong GuiState = 0x578;
-        public const ulong Interactable = 0x5AB;
-        public const ulong LayoutOrder = 0x580;
-        public const ulong Position = 0x510;
-        public const ulong Rotation = 0x188;
-        public const ulong Selectable = 0x5AC;
-        public const ulong SelectionOrder = 0x59C;
-        public const ulong Size = 0x530;
-        public const ulong SizeConstraint = 0x5A0;
-        public const ulong Visible = 0x5AD;
-        public const ulong ZIndex = 0x5A4;
+    public static class ByteCode {
+         public const long Pointer = 0x10;
+         public const long Size = 0x20;
     }
 
-    public static class Humanoid
-    {
-        public const ulong AutoJumpEnabled = 0x1E0;
-        public const ulong AutoRotate = 0x1E1;
-        public const ulong AutomaticScalingEnabled = 0x1E2;
-        public const ulong BreakJointsOnDeath = 0x1E3;
-        public const ulong CameraOffset = 0x140;
-        public const ulong DisplayDistanceType = 0x18C;
-        public const ulong EvaluateStateMachine = 0x1E4;
-        public const ulong Health = 0x194;
-        public const ulong HealthDisplayDistance = 0x198;
-        public const ulong HealthDisplayType = 0x19C;
-        public const ulong HipHeight = 0x1A0;
-        public const ulong HumanoidState = 0x8A0;
-        public const ulong HumanoidStateID = 0x20;
-        public const ulong JumpHeight = 0x1AC;
-        public const ulong JumpPower = 0x1B0;
-        public const ulong MaxHealth = 0x1B4;
-        public const ulong MaxSlopeAngle = 0x1B8;
-        public const ulong NameDisplayDistance = 0x1BC;
-        public const ulong NameOcclusion = 0x1C0;
-        public const ulong RequiresNeck = 0x1E9;
-        public const ulong RigType = 0x1CC;
-        public const ulong SeatPart = 0x120;
-        public const ulong Sit = 0x1EA;
-        public const ulong TargetPoint = 0x164;
-        public const ulong UseJumpPower = 0x1EC;
-        public const ulong WalkSpeed = 0x1DC;
-        public const ulong WalkSpeedCheck = 0x3C4;
-        public const ulong WalkToPoint = 0x17C;
-        public const ulong Walkspeed = 0x1DC;
-        public const ulong WalkspeedCheck = 0x3C4;
+    public static class Camera {
+         public const long CameraSubject = 0xe8;
+         public const long CameraType = 0x158;
+         public const long FieldOfView = 0x160;
+         public const long ImagePlaneDepth = 0x2f0;
+         public const long Position = 0x11c;
+         public const long Rotation = 0xf8;
+         public const long Viewport = 0x2ac;
+         public const long ViewportSize = 0x2e8;
     }
 
-    public static class InputObject
-    {
-        public const ulong MousePosition = 0xEC;
+    public static class CharacterMesh {
+         public const long BaseTextureId = 0xe0;
+         public const long BodyPart = 0x160;
+         public const long MeshId = 0x110;
+         public const long OverlayTextureId = 0x140;
     }
 
-    public static class Instance
-    {
-        public const ulong AttributeContainer = 0x48;
-        public const ulong AttributeList = 0x18;
-        public const ulong AttributeToNext = 0x58;
-        public const ulong AttributeToValue = 0x18;
-        public const ulong ChildrenEnd = 0x8;
-        public const ulong ChildrenStart = 0x78;
-        public const ulong ClassDescriptor = 0x18;
-        public const ulong ClassName = 0x8;
-        public const ulong Name = 0xB0;
-        public const ulong Parent = 0x70;
+    public static class ClickDetector {
+         public const long MaxActivationDistance = 0x100;
+         public const long MouseIcon = 0xe0;
     }
 
-    public static class Lighting
-    {
-        public const ulong Ambient = 0xE0;
-        public const ulong Atmosphere = 0x1F0;
-        public const ulong Brightness = 0x128;
-        public const ulong ClockTime = 0x1C0;
-        public const ulong ColorShift_Bottom = 0xEC;
-        public const ulong ColorShift_Top = 0xF8;
-        public const ulong EnvironmentDiffuseScale = 0x12C;
-        public const ulong EnvironmentSpecularScale = 0x130;
-        public const ulong ExposureCompensation = 0x134;
-        public const ulong FogColor = 0x104;
-        public const ulong FogEnd = 0x13C;
-        public const ulong FogStart = 0x140;
-        public const ulong GradientBottom = 0x19C;
-        public const ulong GradientTop = 0x158;
-        public const ulong MoonPosition = 0x18C;
-        public const ulong OutdoorAmbient = 0x110;
-        public const ulong ShadowSoftness = 0x148;
-        public const ulong Sky = 0x1E0;
-        public const ulong SunPosition = 0x180;
+    public static class Clothing {
+         public const long Color3 = 0x128;
+         public const long Template = 0x108;
     }
 
-    public static class LightingParameters
-    {
-        public const ulong GeographicLatitude = 0x198;
-        public const ulong LightColor = 0x164;
-        public const ulong LightDirection = 0x170;
-        public const ulong SkyAmbient = 0x158;
-        public const ulong SkyAmbient2 = 0x19C;
-        public const ulong Source = 0x17C;
-        public const ulong TrueMoonPosition = 0x18C;
-        public const ulong TrueSunPosition = 0x180;
+    public static class ColorCorrectionEffect {
+         public const long Brightness = 0xdc;
+         public const long Contrast = 0xe0;
+         public const long Enabled = 0xc8;
+         public const long TintColor = 0xd0;
     }
 
-    public static class LocalScript
-    {
-        public const ulong ByteCode = 0x1A8;
-        public const ulong Bytecode = 0x1A8;
-        public const ulong Hash = 0xE8;
+    public static class ColorGradingEffect {
+         public const long Enabled = 0xc8;
+         public const long TonemapperPreset = 0xd0;
     }
 
-    public static class MaterialColors
-    {
-        public const ulong Asphalt = 0x30;
-        public const ulong Basalt = 0x27;
-        public const ulong Brick = 0xF;
-        public const ulong Cobblestone = 0x33;
-        public const ulong Concrete = 0xC;
-        public const ulong CrackedLava = 0x2D;
-        public const ulong Glacier = 0x1B;
-        public const ulong Grass = 0x6;
-        public const ulong Ground = 0x2A;
-        public const ulong Ice = 0x36;
-        public const ulong LeafyGrass = 0x39;
-        public const ulong Limestone = 0x3F;
-        public const ulong Mud = 0x24;
-        public const ulong Pavement = 0x42;
-        public const ulong Rock = 0x18;
-        public const ulong Salt = 0x3C;
-        public const ulong Sand = 0x12;
-        public const ulong Sandstone = 0x21;
-        public const ulong Slate = 0x9;
-        public const ulong Snow = 0x1E;
-        public const ulong WoodPlanks = 0x15;
+    public static class DataModel {
+         public const long CreatorId = 0x190;
+         public const long GameId = 0x198;
+         public const long GameLoaded = 0x670;
+         public const long JobId = 0x138;
+         public const long PlaceId = 0x1a0;
+         public const long PlaceVersion = 0x1bc;
+         public const long PrimitiveCount = 0x4a0;
+         public const long ScriptContext = 0x440;
+         public const long ServerIP = 0x658;
+         public const long ToRenderView1 = 0x1d8;
+         public const long ToRenderView2 = 0x8;
+         public const long ToRenderView3 = 0x28;
+         public const long Workspace = 0x178;
     }
 
-    public static class MeshPart
-    {
-        public const ulong MeshId = 0x300;
-        public const ulong TextureId = 0x330;
+    public static class DepthOfFieldEffect {
+         public const long Enabled = 0xc8;
+         public const long FarIntensity = 0xd0;
+         public const long FocusDistance = 0xd4;
+         public const long InFocusRadius = 0xd8;
+         public const long NearIntensity = 0xdc;
     }
 
-    public static class Misc
-    {
-        public const ulong Adornee = 0x108;
-        public const ulong AnimationId = 0xD0;
-        public const ulong StringLength = 0x10;
-        public const ulong Value = 0xD0;
+    public static class DragDetector {
+         public const long ActivatedCursorIcon = 0x1d8;
+         public const long CursorIcon = 0xe0;
+         public const long MaxActivationDistance = 0x100;
+         public const long MaxDragAngle = 0x2c0;
+         public const long MaxDragTranslation = 0x284;
+         public const long MaxForce = 0x2c4;
+         public const long MaxTorque = 0x2c8;
+         public const long MinDragAngle = 0x2cc;
+         public const long MinDragTranslation = 0x290;
+         public const long ReferenceInstance = 0x208;
+         public const long Responsiveness = 0x2d8;
     }
 
-    public static class ModuleScript
-    {
-        public const ulong ByteCode = 0x150;
-        public const ulong Bytecode = 0x150;
-        public const ulong Hash = 0x160;
+    public static class FakeDataModel {
+         public const long Pointer = 0x7a39ad8;
+         public const long RealDataModel = 0x1d8;
     }
 
-    public static class MouseService
-    {
-        public const ulong InputObject = 0x118;
-        public const ulong MousePosition = 0xEC;
+    public static class GuiBase2D {
+         public const long AbsolutePosition = 0x110;
+         public const long AbsoluteRotation = 0x188;
+         public const long AbsoluteSize = 0x118;
     }
 
-    public static class Player
-    {
-        public const ulong AccountAge = 0x32C;
-        public const ulong CameraMode = 0x20;
-        public const ulong Character = 0x280;
-        public const ulong DisplayName = 0x130;
-        public const ulong HealthDisplayDistance = 0x358;
-        public const ulong LocalPlayer = 0x138;
-        public const ulong LocaleId = 0x700;
-        public const ulong MaxZoomDistance = 0x330;
-        public const ulong MinZoomDistance = 0x334;
-        public const ulong ModelInstance = 0x3A8;
-        public const ulong NameDisplayDistance = 0x368;
-        public const ulong Team = 0x2B0;
-        public const ulong TeamColor = 0x374;
-        public const ulong UserId = 0x2D8;
+    public static class GuiObject {
+         public const long BackgroundColor3 = 0x540;
+         public const long BackgroundTransparency = 0x54c;
+         public const long BorderColor3 = 0x54c;
+         public const long Image = 0x988;
+         public const long LayoutOrder = 0x580;
+         public const long Position = 0x510;
+         public const long RichText = 0xb50;
+         public const long Rotation = 0x188;
+         public const long ScreenGui_Enabled = 0x4c4;
+         public const long Size = 0x530;
+         public const long Text = 0xda0;
+         public const long TextColor3 = 0xe50;
+         public const long Visible = 0x5ad;
+         public const long ZIndex = 0x19b;
     }
 
-    public static class Players
-    {
-        public const ulong LocalPlayer = 0x138;
+    public static class Humanoid {
+         public const long AutoJumpEnabled = 0x1e0;
+         public const long AutoRotate = 0x1e1;
+         public const long AutomaticScalingEnabled = 0x1e2;
+         public const long BreakJointsOnDeath = 0x1e3;
+         public const long CameraOffset = 0x140;
+         public const long DisplayDistanceType = 0x18c;
+         public const long DisplayName = 0xd0;
+         public const long EvaluateStateMachine = 0x1e4;
+         public const long FloorMaterial = 0x190;
+         public const long Health = 0x194;
+         public const long HealthDisplayDistance = 0x198;
+         public const long HealthDisplayType = 0x19c;
+         public const long HipHeight = 0x1a0;
+         public const long HumanoidRootPart = 0x480;
+         public const long HumanoidState = 0x8a0;
+         public const long HumanoidStateID = 0x20;
+         public const long IsWalking = 0x91f;
+         public const long Jump = 0x1e6;
+         public const long JumpHeight = 0x1ac;
+         public const long JumpPower = 0x1b0;
+         public const long MaxHealth = 0x1b4;
+         public const long MaxSlopeAngle = 0x1b8;
+         public const long MoveDirection = 0x158;
+         public const long MoveToPart = 0x130;
+         public const long MoveToPoint = 0x17c;
+         public const long NameDisplayDistance = 0x1bc;
+         public const long NameOcclusion = 0x1c0;
+         public const long PlatformStand = 0x1e8;
+         public const long RequiresNeck = 0x1e9;
+         public const long RigType = 0x1cc;
+         public const long SeatPart = 0x120;
+         public const long Sit = 0x1e9;
+         public const long TargetPoint = 0x164;
+         public const long UseJumpPower = 0x1ec;
+         public const long WalkTimer = 0x410;
+         public const long Walkspeed = 0x1dc;
+         public const long WalkspeedCheck = 0x3c4;
     }
 
-    public static class Primitive
-    {
-        public const ulong AssemblyAngularVelocity = 0x104;
-        public const ulong AssemblyLinearVelocity = 0xF8;
-        public const ulong CFrame = 0xC8;
-        public const ulong Flags = 0x1B6;
-        public const ulong Material = 0x236;
-        public const ulong Orientation = 0xC8;
-        public const ulong Position = 0xEC;
-        public const ulong PrimitiveFlags = 0x1B6;
-        public const ulong Rotation = 0xC8;
-        public const ulong Size = 0x1B8;
+    public static class Instance {
+         public const long AttributeContainer = 0x48;
+         public const long AttributeList = 0x18;
+         public const long AttributeToNext = 0x58;
+         public const long AttributeToValue = 0x18;
+         public const long ChildrenEnd = 0x8;
+         public const long ChildrenStart = 0x78;
+         public const long ClassBase = 0xd50;
+         public const long ClassDescriptor = 0x18;
+         public const long ClassName = 0x8;
+         public const long Name = 0xb0;
+         public const long Parent = 0x70;
+         public const long This = 0x8;
     }
 
-    public static class PrimitiveFlags
-    {
-        public const ulong Anchored = 0x2;
-        public const ulong CanCollide = 0x8;
-        public const ulong CanQuery = 0x20;
-        public const ulong CanTouch = 0x10;
+    public static class Lighting {
+         public const long Ambient = 0xe0;
+         public const long Brightness = 0x128;
+         public const long ClockTime = 0x1c0;
+         public const long ColorShift_Bottom = 0xf8;
+         public const long ColorShift_Top = 0xec;
+         public const long EnvironmentDiffuseScale = 0x12c;
+         public const long EnvironmentSpecularScale = 0x130;
+         public const long ExposureCompensation = 0x134;
+         public const long FogColor = 0x104;
+         public const long FogEnd = 0x13c;
+         public const long FogStart = 0x140;
+         public const long GeographicLatitude = 0x198;
+         public const long GlobalShadows = 0x150;
+         public const long GradientBottom = 0x19c;
+         public const long GradientTop = 0x158;
+         public const long LightColor = 0x164;
+         public const long LightDirection = 0x170;
+         public const long MoonPosition = 0x18c;
+         public const long OutdoorAmbient = 0x110;
+         public const long Sky = 0x1e0;
+         public const long Source = 0x17c;
+         public const long SunPosition = 0x180;
     }
 
-    public static class ProximityPrompt
-    {
-        public const ulong ActionText = 0xC8;
-        public const ulong Enabled = 0x14E;
-        public const ulong HoldDuration = 0x138;
-        public const ulong KeyboardKeyCode = 0x13C;
-        public const ulong MaxActivationDistance = 0x140;
-        public const ulong ObjectText = 0xE8;
-        public const ulong RequiresLineOfSight = 0x14F;
+    public static class LocalScript {
+         public const long ByteCode = 0x1a8;
+         public const long GUID = 0xe8;
+         public const long Hash = 0x1b8;
     }
 
-    public static class RenderView
-    {
-        public const ulong LightingValid = 0x170;
-        public const ulong SkyValid = 0x28D;
-        public const ulong SkyboxValid = 0x28D;
+    public static class MaterialColors {
+         public const long Asphalt = 0x30;
+         public const long Basalt = 0x27;
+         public const long Brick = 0xf;
+         public const long Cobblestone = 0x33;
+         public const long Concrete = 0xc;
+         public const long CrackedLava = 0x2d;
+         public const long Glacier = 0x1b;
+         public const long Grass = 0x6;
+         public const long Ground = 0x2a;
+         public const long Ice = 0x36;
+         public const long LeafyGrass = 0x39;
+         public const long Limestone = 0x3f;
+         public const long Mud = 0x24;
+         public const long Pavement = 0x42;
+         public const long Rock = 0x18;
+         public const long Salt = 0x3c;
+         public const long Sand = 0x12;
+         public const long Sandstone = 0x21;
+         public const long Slate = 0x9;
+         public const long Snow = 0x1e;
+         public const long WoodPlanks = 0x15;
     }
 
-    public static class Seat
-    {
-        public const ulong Occupant = 0x220;
+    public static class MeshContentProvider {
+         public const long AssetID = 0x10;
+         public const long Cache = 0xe8;
+         public const long LRUCache = 0x20;
+         public const long MeshData = 0x40;
+         public const long ToMeshData = 0x40;
     }
 
-    public static class Sky
-    {
-        public const ulong MoonAngularSize = 0x25C;
-        public const ulong MoonTextureId = 0xE0;
-        public const ulong SkyboxBk = 0x110;
-        public const ulong SkyboxDn = 0x140;
-        public const ulong SkyboxFt = 0x170;
-        public const ulong SkyboxLf = 0x1A0;
-        public const ulong SkyboxOrientation = 0x250;
-        public const ulong SkyboxRt = 0x1D0;
-        public const ulong SkyboxUp = 0x200;
-        public const ulong StarCount = 0x260;
-        public const ulong SunAngularSize = 0x264;
-        public const ulong SunTextureId = 0x230;
+    public static class MeshData {
+         public const long FaceEnd = 0x38;
+         public const long FaceStart = 0x30;
+         public const long VertexEnd = 0x8;
+         public const long VertexStart = 0x0;
     }
 
-    public static class SpecialMesh
-    {
-        public const ulong MeshId = 0x108;
-        public const ulong Offset = 0xD0;
-        public const ulong Scale = 0xDC;
-        public const ulong TextureId = 0x130;
+    public static class MeshPart {
+         public const long MeshId = 0x2f8;
+         public const long Texture = 0x328;
     }
 
-    public static class TaskScheduler
-    {
-        public const ulong JobEnd = 0xD0;
-        public const ulong JobName = 0x18;
-        public const ulong JobStart = 0xC8;
-        public const ulong MaxFps = 0xB0;
-        public const ulong Pointer = 0x7E90548;
+    public static class Misc {
+         public const long Adornee = 0x108;
+         public const long AnimationId = 0xd8;
+         public const long StringLength = 0x10;
+         public const long Value = 0xd0;
     }
 
-    public static class Team
-    {
-        public const ulong TeamColor = 0xD0;
+    public static class Model {
+         public const long PrimaryPart = 0x278;
+         public const long Scale = 0x164;
     }
 
-    public static class Terrain
-    {
-        public const ulong GrassLength = 0x1F8;
-        public const ulong MaterialColors = 0x2A8;
-        public const ulong WaterColor = 0x1E8;
-        public const ulong WaterReflectance = 0x200;
-        public const ulong WaterTransparency = 0x204;
-        public const ulong WaterWaveSize = 0x208;
-        public const ulong WaterWaveSpeed = 0x20C;
+    public static class ModuleScript {
+         public const long ByteCode = 0x150;
+         public const long GUID = 0xe8;
+         public const long Hash = 0x160;
+         public const long IsCoreScript = 0x0;
     }
 
-    public static class TextButton
-    {
-        public const ulong AutoButtonColor = 0x9C4;
-        public const ulong ContentText = 0xDD8;
-        public const ulong Font = 0x10E8;
-        public const ulong LineHeight = 0xED0;
-        public const ulong LocalizedText = 0xDD8;
-        public const ulong MaxVisibleGraphemes = 0x10F4;
-        public const ulong Modal = 0x9C5;
-        public const ulong RichText = 0xFCA;
-        public const ulong Selected = 0x9C6;
-        public const ulong Text = 0xDD8;
-        public const ulong TextColor3 = 0x10D0;
-        public const ulong TextDirection = 0xF70;
-        public const ulong TextScaled = 0xFC2;
-        public const ulong TextSize = 0x10FC;
-        public const ulong TextStrokeColor3 = 0x10DC;
-        public const ulong TextStrokeTransparency = 0x1100;
-        public const ulong TextTransparency = 0x1104;
-        public const ulong TextTruncate = 0x1108;
-        public const ulong TextWrapped = 0xFC4;
-        public const ulong TextXAlignment = 0x110C;
-        public const ulong TextYAlignment = 0xF18;
+    public static class MouseService {
+         public const long InputObject = 0x108;
+         public const long InputObject2 = 0x118;
+         public const long MousePosition = 0xec;
+         public const long SensitivityPointer = 0x307;
     }
 
-    public static class TextLabel
-    {
-        public const ulong ContentText = 0xB58;
-        public const ulong Font = 0xE68;
-        public const ulong LineHeight = 0xC50;
-        public const ulong LocalizedText = 0xB58;
-        public const ulong MaxVisibleGraphemes = 0xE74;
-        public const ulong RichText = 0xD4A;
-        public const ulong Text = 0xB58;
-        public const ulong TextColor3 = 0xE50;
-        public const ulong TextDirection = 0xCF0;
-        public const ulong TextScaled = 0xD42;
-        public const ulong TextSize = 0xE7C;
-        public const ulong TextStrokeColor3 = 0xE5C;
-        public const ulong TextStrokeTransparency = 0xE80;
-        public const ulong TextTransparency = 0xE84;
-        public const ulong TextTruncate = 0xE88;
-        public const ulong TextWrapped = 0xD44;
-        public const ulong TextXAlignment = 0xE8C;
-        public const ulong TextYAlignment = 0xC98;
+    public static class ParticleEmitter {
+         public const long Acceleration = 0x1f8;
+         public const long Brightness = 0x234;
+         public const long Drag = 0x238;
+         public const long Lifetime = 0x20c;
+         public const long LightEmission = 0x250;
+         public const long LightInfluence = 0x254;
+         public const long Rate = 0x260;
+         public const long RotSpeed = 0x214;
+         public const long Rotation = 0x21c;
+         public const long Speed = 0x224;
+         public const long SpreadAngle = 0x22c;
+         public const long Texture = 0x1d8;
+         public const long TimeScale = 0x274;
+         public const long VelocityInheritance = 0x278;
+         public const long ZOffset = 0x27c;
     }
 
-    public static class Tool
-    {
-        public const ulong CanBeDropped = 0x4C8;
-        public const ulong Enabled = 0x4C9;
-        public const ulong Grip = 0x498;
-        public const ulong GripForward = 0x4B0;
-        public const ulong GripPos = 0x4BC;
-        public const ulong GripRight = 0x498;
-        public const ulong GripUp = 0x4A4;
-        public const ulong ManualActivationOnly = 0x4CA;
-        public const ulong RequiresHandle = 0x4CB;
-        public const ulong Tooltip = 0x478;
+    public static class Player {
+         public const long AccountAge = 0x34c;
+         public const long CameraMode = 0x358;
+         public const long DisplayName = 0x150;
+         public const long HealthDisplayDistance = 0x378;
+         public const long LocalPlayer = 0x138;
+         public const long LocaleId = 0x130;
+         public const long MaxZoomDistance = 0x349;
+         public const long MinZoomDistance = 0x354;
+         public const long ModelInstance = 0x3c8;
+         public const long Mouse = 0x1180;
+         public const long NameDisplayDistance = 0x388;
+         public const long Team = 0x2d0;
+         public const long TeamColor = 0x394;
+         public const long UserId = 0x2f8;
     }
 
-    public static class Value
-    {
-        public const ulong Value = 0xD0;
+    public static class PlayerConfigurer {
+         public const long Pointer = 0x0;
     }
 
-    public static class VehicleSeat
-    {
-        public const ulong MaxSpeed = 0x238;
-        public const ulong Occupant = 0x218;
-        public const ulong SteerFloat = 0x240;
-        public const ulong ThrottleFloat = 0x248;
-        public const ulong Torque = 0x24C;
-        public const ulong TurnSpeed = 0x250;
+    public static class PlayerMouse {
+         public const long Icon = 0xe0;
+         public const long Workspace = 0x168;
     }
 
-    public static class VisualEngine
-    {
-        public const ulong Dimensions = 0xAB0;
-        public const ulong FakeDataModel = 0xA90;
-        public const ulong Pointer = 0x801DFB0;
-        public const ulong RenderView = 0xBB0;
-        public const ulong ViewMatrix = 0x150;
+    public static class Primitive {
+         public const long AssemblyAngularVelocity = 0x104;
+         public const long AssemblyLinearVelocity = 0xf8;
+         public const long Flags = 0x1b6;
+         public const long Material = 0x0;
+         public const long Owner = 0x200;
+         public const long Position = 0xec;
+         public const long Rotation = 0xc8;
+         public const long Size = 0x1b8;
+         public const long Validate = 0x6;
     }
 
-    public static class Workspace
-    {
-        public const ulong CurrentCamera = 0x4B0;
-        public const ulong ReadOnlyGravity = 0x9F0;
-        public const ulong World = 0x408;
+    public static class PrimitiveFlags {
+         public const long Anchored = 0x2;
+         public const long CanCollide = 0x8;
+         public const long CanQuery = 0x20;
+         public const long CanTouch = 0x10;
     }
 
-    public static class World
-    {
-        public const ulong Gravity = 0x210;
-        public const ulong Primitives = 0x280;
-        public const ulong worldStepsPerSec = 0x678;
+    public static class ProximityPrompt {
+         public const long ActionText = 0xc8;
+         public const long Enabled = 0x14e;
+         public const long GamepadKeyCode = 0x134;
+         public const long HoldDuration = 0x138;
+         public const long KeyCode = 0x13c;
+         public const long MaxActivationDistance = 0x140;
+         public const long ObjectText = 0xe8;
+         public const long RequiresLineOfSight = 0x14f;
     }
 
-} // namespace RobloxOffsets
+    public static class RenderJob {
+         public const long FakeDataModel = 0x38;
+         public const long RealDataModel = 0x1c8;
+         public const long RenderView = 0x1d0;
+    }
+
+    public static class RenderView {
+         public const long DeviceD3D11 = 0x8;
+         public const long LightingValid = 0x150;
+         public const long SkyValid = 0x28d;
+         public const long VisualEngine = 0x10;
+    }
+
+    public static class RunService {
+         public const long HeartbeatFPS = 0xb8;
+         public const long HeartbeatTask = 0xf8;
+    }
+
+    public static class Script {
+         public const long ByteCode = 0x1a8;
+         public const long GUID = 0xe8;
+         public const long Hash = 0x1b8;
+    }
+
+    public static class ScriptContext {
+         public const long RequireBypass = 0x0;
+    }
+
+    public static class Seat {
+         public const long Occupant = 0x218;
+    }
+
+    public static class Sky {
+         public const long MoonAngularSize = 0x25c;
+         public const long MoonTextureId = 0xe0;
+         public const long SkyboxBk = 0x110;
+         public const long SkyboxDn = 0x140;
+         public const long SkyboxFt = 0x170;
+         public const long SkyboxLf = 0x1a0;
+         public const long SkyboxOrientation = 0x250;
+         public const long SkyboxRt = 0x1d0;
+         public const long SkyboxUp = 0x200;
+         public const long StarCount = 0x260;
+         public const long SunAngularSize = 0x254;
+         public const long SunTextureId = 0x230;
+    }
+
+    public static class Sound {
+         public const long Looped = 0x155;
+         public const long PlaybackSpeed = 0x134;
+         public const long RollOffMaxDistance = 0x138;
+         public const long RollOffMinDistance = 0x13c;
+         public const long SoundGroup = 0x100;
+         public const long SoundId = 0xe0;
+         public const long Volume = 0x148;
+    }
+
+    public static class SpawnLocation {
+         public const long AllowTeamChangeOnTouch = 0x3d;
+         public const long Enabled = 0x1f1;
+         public const long ForcefieldDuration = 0x1e8;
+         public const long Neutral = 0x1f2;
+         public const long TeamColor = 0x1ec;
+    }
+
+    public static class SpecialMesh {
+         public const long MeshId = 0x110;
+         public const long Scale = 0xdc;
+    }
+
+    public static class StatsItem {
+         public const long Value = 0xc8;
+    }
+
+    public static class SunRaysEffect {
+         public const long Enabled = 0xc8;
+         public const long Intensity = 0xd0;
+         public const long Spread = 0xd4;
+    }
+
+    public static class SurfaceAppearance {
+         public const long AlphaMode = 0x2a0;
+         public const long Color = 0x288;
+         public const long ColorMap = 0xe0;
+         public const long EmissiveMaskContent = 0x110;
+         public const long EmissiveStrength = 0x2a4;
+         public const long EmissiveTint = 0x294;
+         public const long MetalnessMap = 0x140;
+         public const long NormalMap = 0x170;
+         public const long RoughnessMap = 0x1a0;
+    }
+
+    public static class TaskScheduler {
+         public const long JobEnd = 0xd0;
+         public const long JobName = 0x18;
+         public const long JobStart = 0xc8;
+         public const long MaxFPS = 0xb0;
+         public const long Pointer = 0x7fcb088;
+    }
+
+    public static class Team {
+         public const long BrickColor = 0xd0;
+    }
+
+    public static class Terrain {
+         public const long GrassLength = 0x1f0;
+         public const long MaterialColors = 0x4a0;
+         public const long WaterColor = 0x1e0;
+         public const long WaterReflectance = 0x1f8;
+         public const long WaterTransparency = 0x1fc;
+         public const long WaterWaveSize = 0x200;
+         public const long WaterWaveSpeed = 0x204;
+    }
+
+    public static class Textures {
+         public const long Decal_Texture = 0x198;
+         public const long Texture_Texture = 0x198;
+    }
+
+    public static class Tool {
+         public const long CanBeDropped = 0x4c8;
+         public const long Enabled = 0x4c9;
+         public const long Grip = 0x4bc;
+         public const long ManualActivationOnly = 0x4ca;
+         public const long RequiresHandle = 0x4cb;
+         public const long TextureId = 0x370;
+         public const long Tooltip = 0x478;
+    }
+
+    public static class UnionOperation {
+         public const long AssetId = 0x2f0;
+    }
+
+    public static class UserInputService {
+         public const long WindowInputState = 0x2d8;
+    }
+
+    public static class VehicleSeat {
+         public const long MaxSpeed = 0x230;
+         public const long SteerFloat = 0x238;
+         public const long ThrottleFloat = 0x240;
+         public const long Torque = 0x244;
+         public const long TurnSpeed = 0x248;
+    }
+
+    public static class VisualEngine {
+         public const long Dimensions = 0xab0;
+         public const long FakeDataModel = 0xa90;
+         public const long Pointer = 0x8158b80;
+         public const long RenderView = 0xbb0;
+         public const long ViewMatrix = 0x150;
+    }
+
+    public static class Weld {
+         public const long Part0 = 0x130;
+         public const long Part1 = 0x140;
+    }
+
+    public static class WeldConstraint {
+         public const long Part0 = 0xd0;
+         public const long Part1 = 0xe0;
+    }
+
+    public static class WindowInputState {
+         public const long CapsLock = 0x40;
+         public const long CurrentTextBox = 0x48;
+    }
+
+    public static class Workspace {
+         public const long CurrentCamera = 0x4b0;
+         public const long DistributedGameTime = 0x4d0;
+         public const long ReadOnlyGravity = 0x9f0;
+         public const long World = 0x408;
+    }
+
+    public static class World {
+         public const long AirProperties = 0x218;
+         public const long FallenPartsDestroyHeight = 0x208;
+         public const long Gravity = 0x210;
+         public const long Primitives = 0x280;
+         public const long worldStepsPerSec = 0x678;
+    }
+
+}
